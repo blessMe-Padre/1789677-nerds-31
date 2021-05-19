@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Субботин Сергей](https://up.htmlacademy.ru/htmlcss/31/user/1789677).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
