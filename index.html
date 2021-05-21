@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Нёрдс</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__menu">
+        <a href="#">
+          <img src="https://via.placeholder.com/150x100" alt="">
+        </a>
+        <div class="menu__body">
+          <ul class="menu__list">
+            <li><a href="#" class="menu__link menu__link--active">Студия</a></li>
+            <li><a href="#" class="menu__link">Клиенты</a></li>
+            <li><a href="catalog.html" class="menu__link">Магазин</a></li>
+            <li><a href="#" class="menu__link">Контакты</a></li>
+          </ul>
+        </div>
+        <a class="cart" href="#">Корзина</a>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Интернет магазин «Nёrds»</h1>
+    <section>
+      <h2 class="visually-hidden">Описание</h2>
+      <div>
+        <p>Долго, дорого, скрупулезно.</p>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного
+          приложения.</p>
+        <a class="button" href="#">Узнать больше</a>
+      </div>
+      <img src="https://via.placeholder.com/760x431" alt="">
+    </section>
+    <!-- /slider-->
+    <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <div class="container">
+        <ul class="services__items">
+          <li class="services__item">
+            <img src="https://via.placeholder.com/300x146" alt="">
+            <h3 class="services__title">Веб-сайты</h3>
+            <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#" class="button">Заказать</a>
+          </li>
+          <li class="services__item">
+            <img src="https://via.placeholder.com/300x146" alt="">
+
+            <h3 class="services__title">Приложения</h3>
+            <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="button btn--green">Заказать</a>
+          </li>
+          <li class="services__item">
+            <img src="https://via.placeholder.com/300x146" alt="">
+            <h3 class="services__title">Презентации</h3>
+            <p class="services__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="button btn--yellow">Заказать</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <h2 class="visually-hidden">О нас</h2>
+      <div>
+        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+          Работаем не покладая рук, как роботы.</p>
+        <p>Выполняем заказы на разработку:</p>
+        <ul>
+          <li> Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <img src="https://via.placeholder.com/360x208" alt="">
+      <p>с 2004 года Любим точность во всем:</p>
+      <ul>
+        <li>
+          <p>146<sup>%</sup></p>
+          <p>Уровень самоотдачи</p>
+        </li>
+        <li>
+          <p>100<sup>%</sup></p>
+          <p>Соблюдение сроков</p>
+        </li>
+        <li>
+          <p>50<sup>%</sup></p>
+          <p>Минимальная предоплата</p>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </section>
+    <section class="companies">
+      <h2 class=".visually-hidden">Производители</h2>
+      <img src="https://via.placeholder.com/209x90" alt="">
+      <img src="https://via.placeholder.com/209x90" alt="">
+      <img src="https://via.placeholder.com/209x90" alt="">
+      <img src="https://via.placeholder.com/209x90" alt="">
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>NЁRDS DESIGN STUDIO</p>
+      <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург <br> +7 800 555-86-28</p>
+      <a href="tel:+78005558628">+7 800 555-86-28</a>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <section>
+      <h2>Контакты</h2>
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+  </div>
+</body>
+
 </html>
