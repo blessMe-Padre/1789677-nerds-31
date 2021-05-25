@@ -3,43 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Нёрдс</title>
+  <title>HTML Academy: Каталог</title>
 </head>
 
 <body>
   <header>
-    <nav>
+    <div>
       <a href="index.html">
         <img src="https://via.placeholder.com/150x100" alt="">
       </a>
-      <div class="menu__body">
+      <nav class="menu__body">
         <ul class="menu__list">
           <li><a href="index.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
-      </div>
+      </nav>
       <a href="blank.html">Корзина</a>
-    </nav>
+    </div>
   </header>
   <main>
-    <section>
+    <div>
       <p>Магазин готовых шаблонов</p>
-    </section>
+    </div>
     <section>
-      <section>
+      <div>
         <h2>Фильтр товаров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
-            <input type="range" min="0" max="15000" value="10000"> <br>
+            <input type="range" min="0" max="15000" value="10000">
 
             <label for="num1">от</label>
             <input type="text" name="num1" id="num1">
@@ -52,15 +46,15 @@
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input type="radio" name="adaptive" value="adaptive" id="filter-adaptive" checked>
+                <input type="radio" name="r1" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="fixed" value="fixed" id="filter-fixed">
+                <input type="radio" name="r1" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="rubber" value="rubber" id="filter-rubber">
+                <input type="radio" name="r1" value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
               <ul>
@@ -69,80 +63,81 @@
           <fieldset>
             <legend>Особенности:</legend>
             <li>
-              <input type="checkbox" name="filter-slider" id="filter-slider" checked>
+              <input type="checkbox" name="filter-1" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" name="plus" id="filter-plus">
+              <input type="checkbox" name="filter-1" id="filter-plus">
               <label for="filter-plus">Блок преимуществ</label>
             </li>
             <li>
-              <input type="checkbox" name="news" id="filter-news" checked>
+              <input type="checkbox" name="filter-1" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="gallery" id="filter-gallery">
+              <input type="checkbox" name="filter-1" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="cart" id="filter-suavcartecito">
+              <input type="checkbox" name="filter-1" id="filter-suavcartecito">
               <label for="filter-cart">Корзина</label>
             </li>
             <ul>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
-      </section>
+      </div>
     </section>
     <section>
-      <h2>готовые шаблоны</h2>
+      <h2>Готовые шаблоны</h2>
       <span>сортировать:</span>
       <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По названию</li>
+
+        <a href="">
+          <li>По цене</li>
+        </a>
+        <a href="">
+          <li>По типу</li>
+        </a>
+        <a href="">
+          <li>По названию</li>
+        </a>
       </ul>
       <ul>
         <li>
           <img src="https://via.placeholder.com/358x578" alt="">
           <h3>Sedona</h3>
-          <p>Информационный сайтдля туристов</p>
+          <p>Информационный сайт для туристов</p>
           <a href="#">9 900 ₽</a>
         </li>
         <li>
           <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Sedona</h3>
-          <p>Информационный сайтдля туристов</p>
+          <h3>Pink</h3>
+          <p>Сайт для мобильного приложения</p>
+          <a href="#">8 900 ₽</a>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/358x578" alt="">
+          <h3>Borodinski</h3>
+          <p>Сайт модного барбершопа</p>
+          <a href="#">11 900 ₽</a>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/358x578" alt="">
+          <h3>Mishka</h3>
+          <p>Интернет магазин милых вещей для дома</p>
           <a href="#">9 900 ₽</a>
         </li>
         <li>
           <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Sedona</h3>
-          <p>Информационный сайтдля туристов</p>
+          <h3>A+</h3>
+          <p>Информационный сайт для образования</p>
           <a href="#">9 900 ₽</a>
         </li>
         <li>
           <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Sedona</h3>
-          <p>Информационный сайтдля туристов</p>
-          <a href="#">9 900 ₽</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Sedona</h3>
-          <p>Информационный сайтдля туристов</p>
-          <a href="#">9 900 ₽</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Sedona</h3>
-          <p>Информационный сайтдля туристов</p>
-          <a href="#">9 900 ₽</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Sedona</h3>
-          <p>Информационный сайтдля туристов</p>
+          <h3>Kvast</h3>
+          <p>Информационный сайт про пиво</p>
           <a href="#">9 900 ₽</a>
         </li>
       </ul>
@@ -163,13 +158,13 @@
     </section>
   </main>
   <footer class="footer">
-    <section>
+    <div>
       <h2>Карта</h2>
-      <p>NЁRDS DESIGN STUDIO</p>
+      <p>nёrds design studio</p>
       <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург <br> +7 800 555-86-28</p>
       <a href="tel:+78005558628">+7 800 555-86-28</a>
-    </section>
-    <section>
+    </div>
+    <div>
       <h2>Контакты</h2>
       <ul>
         <li>
@@ -182,11 +177,11 @@
           <a href="blank.html">Инстаграм</a>
         </li>
       </ul>
-    </section>
-    <section>
+    </div>
+    <div>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    </div>
   </footer>
   </div>
 </body>
