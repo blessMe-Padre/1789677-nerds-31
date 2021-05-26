@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Каталог</title>
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
   <header>
     <div>
       <a href="index.html">
-        <img src="https://via.placeholder.com/150x100" alt="">
+        <img src="img/nerds-logo.svg" width="160" height="60" alt="Интернет магазин «Nёrds»">
       </a>
       <nav class="menu__body">
         <ul class="menu__list">
@@ -105,39 +106,40 @@
       </ul>
       <ul>
         <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
+          <img src="img/catalog/img-sedona.jpg" width="358" height="578" alt="Шаблон сайта для туристов">
           <h3>Sedona</h3>
           <p>Информационный сайт для туристов</p>
           <a href="#">9 900 ₽</a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Pink</h3>
-          <p>Сайт для мобильного приложения</p>
+          <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Шаблон сайта приложения">
+          <h3>Pink App</h3>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
           <a href="#">8 900 ₽</a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Borodinski</h3>
-          <p>Сайт модного барбершопа</p>
+          <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Шаблон сайта салона красоты">
+          <h3>Barbershop</h3>
+          <p>Сайт салона красоты. Для мужчин, да.</p>
           <a href="#">11 900 ₽</a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Mishka</h3>
-          <p>Интернет магазин милых вещей для дома</p>
+          <img src="img/catalog/img-mishka.jpg" width="358" height="578" alt="Шаблон интернет магазина вязаных игрушек">
+          <h3>mishka</h3>
+          <p>Интернет-магазин вязаных игрушек</p>
           <a href="#">9 900 ₽</a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>A+</h3>
-          <p>Информационный сайт для образования</p>
+          <img src="img/catalog/img-aplus.jpg" width="358" height="578" alt="Шаблон лендинга курсов">
+          <h3>a plus</h3>
+          <p>Лендинг курсов повышения квалификации</p>
           <a href="#">9 900 ₽</a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/358x578" alt="">
-          <h3>Kvast</h3>
-          <p>Информационный сайт про пиво</p>
+          <img src="img/catalog/img-kvast.jpg" width="358" height="578"
+            alt="Шаблон сайтa производителя крафтового кваса">
+          <h3>кваст</h3>
+          <p>Промо-сайт производителя крафтового кваса</p>
           <a href="#">9 900 ₽</a>
         </li>
       </ul>
@@ -158,6 +160,8 @@
     </section>
   </main>
   <footer class="footer">
+    <img src="img/map.jpg" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербур">
+    <img src="img/map-marker.png" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербур">
     <div>
       <h2>Карта</h2>
       <p>nёrds design studio</p>
@@ -168,13 +172,19 @@
       <h2>Контакты</h2>
       <ul>
         <li>
-          <a href="blank.html">Вконтакте</a>
+          <a href="#">
+            <img src="img/social-icons/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+          </a>
         </li>
         <li>
-          <a href="blank.html">Фейсбук</a>
+          <a href="#">
+            <img src="img/social-icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+          </a>
         </li>
         <li>
-          <a href="blank.html">Инстаграм</a>
+          <a href="#">
+            <img src="img/social-icons/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+          </a>
         </li>
       </ul>
     </div>
@@ -183,7 +193,24 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
-  </div>
+  <!-- форма отправки -->
+  <section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="appointment-name">Ваше имя</label>
+        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+
+        <Label>Ваш email</Label>
+        <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="appointment-text">Текст письма</label>
+        <textarea id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
