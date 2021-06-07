@@ -42,12 +42,11 @@
 
           <label for="num2">до</label>
           <input class="filter-num2" type="text" name="num2" id="num2">
-
         </fieldset>
 
         <fieldset>
           <legend>Сетка:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option filter-radio">
               <input class="filter-input-checkbox filter-input" type="radio" name="r1" value="adaptive"
                 id="filter-adaptive" checked>
@@ -67,7 +66,7 @@
 
         <fieldset>
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option filter-checkbox">
               <input class="filter-input-checkbox filter-input" type="checkbox" name="filter-1" id="filter-slider"
                 checked>
@@ -87,8 +86,7 @@
               <label for="filter-gallery">Галерея</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" name="filter-1"
-                id="filter-suavcartecito">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="filter-1" id="filter-cart">
               <label for="filter-cart">Корзина</label>
             </li>
             <ul>
@@ -99,8 +97,8 @@
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Готовые шаблоны</h2>
-      <span class="">сортировать:</span>
-      <ul class="breadcrumbs">
+      <span class="catalog-title">сортировать:</span>
+      <ul class="catalog-list breadcrumbs">
         <a href="">
           <li class="breadcrumbs-current">По цене</li>
         </a>
@@ -111,11 +109,11 @@
           <li>По названию</li>
         </a>
       </ul>
-      <ul>
+      <ul class="catalog-list">
         <li>
           <img src="img/catalog/catalog-sedona.jpg" width="358" height="578" alt="Шаблон сайта для туристов">
           <div class="item-description">
-            <h3>Sedona</h3>
+            <p>Sedona</p>
             <p>Информационный сайт для туристов</p>
             <a class="button button-catalog button_red" href="#">9 900 ₽</a>
           </div>
@@ -123,7 +121,7 @@
         <li>
           <img src="img/catalog/catalog-pink.jpg" width="358" height="578" alt="Шаблон сайта приложения">
           <div class="item-description">
-            <h3>Pink App</h3>
+            <p>Pink App</p>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="button button-catalog button_red" href="#">9 900 ₽</a>
           </div>
@@ -131,7 +129,7 @@
         <li>
           <img src="img/catalog/catalog-barbershop.jpg" width="358" height="578" alt="Шаблон сайта салона красоты">
           <div class="item-description">
-            <h3>Barbershop</h3>
+            <p>Barbershop</p>
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <a class="button button-catalog button_red" href="#">9 900 ₽</a>
           </div>
@@ -140,7 +138,7 @@
           <img src="img/catalog/catalog-mishka.jpg" width="358" height="578"
             alt="Шаблон интернет магазина вязаных игрушек">
           <div class="item-description">
-            <h3>mishka</h3>
+            <p>mishka</p>
             <p>Интернет-магазин вязаных игрушек</p>
             <a class="button button-catalog button_red" href="#">9 900 ₽</a>
           </div>
@@ -148,7 +146,7 @@
         <li>
           <img src="img/catalog/catalog-aplus.jpg" width="358" height="578" alt="Шаблон лендинга курсов">
           <div class="item-description">
-            <h3>a plus</h3>
+            <p>a plus</p>
             <p>Лендинг курсов повышения квалификации</p>
             <a class="button button-catalog button_red" href="#">9 900 ₽</a>
           </div>
@@ -157,7 +155,7 @@
           <img src="img/catalog/catalog-kvast.jpg" width="358" height="578"
             alt="Шаблон сайтa производителя крафтового кваса">
           <div class="item-description">
-            <h3>кваст</h3>
+            <p>кваст</p>
             <p>Промо-сайт производителя крафтового кваса</p>
             <a class="button button-catalog button_red" href="#">9 900 ₽</a>
           </div>
