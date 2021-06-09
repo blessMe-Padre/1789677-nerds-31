@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,54 +11,76 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="60" alt="Интернет магазин «Nёrds»">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <div class="cart-navigation">
-        <a class="cart-link" href="#">Корзина</a>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="60" alt="Интернет магазин «Nёrds»">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation__link"><a href="index.html">Студия</a></li>
+          <li class="site-navigation__link"><a href="blank.html">Клиенты</a></li>
+          <li class="site-navigation__link"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation__link"><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="cart-navigation">
+          <a class="cart-link" href="#">Корзина</a>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Интернет магазин «Nёrds»</h1>
-    <section>
+    <section class="slider">
       <h2 class="visually-hidden">Описание</h2>
-      <div>
-        <div class="slider-item">
-          <div class="slider-description">
-            <p class="slider-description__title">Долго, дорого, скрупулезно.</p>
-            <p class="slider-description__text">Математически выверенный дизайн для вашего сайта или мобильного
-              приложения.</p>
-            <a class="button button_slider" href="#">Узнать больше</a>
+      <div class="container">
+        <div class="slider-inner">
+          <div class="slides">
+            <input class="visually-hidden" type="radio" name="r" id="r1" checked>
+            <input class="visually-hidden" type="radio" name="r" id="r2">
+            <input class="visually-hidden" type="radio" name="r" id="r3">
+
+            <div class="slider-item slider-item1">
+              <div class="slider-description">
+                <p class="slider-description__title">Долго, дорого, скрупулезно.</p>
+                <p class="slider-description__text">Математически выверенный дизайн для вашего сайта или мобильного
+                  приложения.</p>
+                <a class="button button_slider" href="#">Узнать больше</a>
+              </div>
+              <div class="slider-image">
+                <img src="img/slider/main-slider-slide1.png" width="760" height="431" alt="три смартфона">
+              </div>
+            </div>
+            <div class="slider-item slider-item2">
+              <div class="slider-description">
+                <p class="slider-description__title">Любим математику как никто другой</p>
+                <p class="slider-description__text">Никакого креатива, только математические формулы для расчета
+                  идеальных
+                  пропорций
+                </p>
+                <a class="button button_slider" href="#">Узнать больше</a>
+              </div>
+              <div class="slider-image">
+                <img src="img/slider/main-slider-slide2.png" width="760" height="431" alt="два моноблока">
+              </div>
+            </div>
+            <div class="slider-item slider-item3">
+              <div class="slider-description">
+                <p class="slider-description__title">Только ночь, только хардкор</p>
+                <p class="slider-description__text">Работать днем, как все? Мы против этого.
+                  Ближе к полуночи работа только начинается.</p>
+                <a class="button button_slider" href="#">Узнать больше</a>
+              </div>
+              <div class="slider-image">
+                <img src="img/slider/main-slider-slide3.png" width="760" height="431" alt="планшет и смартфон">
+              </div>
+            </div>
+
           </div>
-          <div class="slider-image">
-            <img src="img/slider/main-slider-slide1.jpg" width="760" height="431" alt="три смартфона">
-          </div>
-        </div>
-        <div>
-          <p class="slider-description__title">Любим математику как никто другой</p>
-          <p class="slider-description__text">Никакого креатива, только математические формулы для расчета идеальных
-            пропорций
-          </p>
-          <a class="button button_slider" href="#">Узнать больше</a>
-          <div class="slider-image">
-            <img src="img/slider/main-slider-slide2.jpg" width="760" height="431" alt="два моноблока">
-          </div>
-        </div>
-        <div>
-          <p class="slider-description__title">Только ночь, только хардкор</p>
-          <p class="slider-description__text">Работать днем, как все? Мы против этого.
-            Ближе к полуночи работа только начинается.</p>
-          <a class="button button_slider" href="#">Узнать больше</a>
-          <div class="slider-image">
-            <img src="img/slider/main-slider-slide3.jpg" width="760" height="431" alt="планшет и смартфон">
+
+          <div class="slider-navigation">
+            <label class="navigation-bar" for="r1"></label>
+            <label class="navigation-bar" for="r2"></label>
+            <label class="navigation-bar" for="r3"></label>
           </div>
         </div>
       </div>
@@ -66,7 +88,7 @@
 
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
-      <div>
+      <div class="container container_services">
         <ul class="services-list">
           <li class="services-item">
             <div class="services-image">
@@ -96,20 +118,20 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about container">
       <h2 class="visually-hidden">О нас</h2>
-      <div>
+      <div class="about-descriptions">
         <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
           Работаем не покладая рук, как роботы.</p>
         <p class="about-subtitle">Выполняем заказы на разработку:</p>
-        <ul class="about-list">
+        <ul class="about-descriptions__list">
           <li> Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div>
+      <div class="about-feature">
         <img src="img/about-nerds.png" width="360" height="208" alt="логотип «Nёrds»">
         <p class="about-subtitle">с 2004 года любим точность во всем:</p>
         <ul class="about-list">
@@ -128,7 +150,7 @@
         </ul>
       </div>
     </section>
-    <section class="clients">
+    <section class="clients container">
       <h2 class="visually-hidden">Клиенты</h2>
       <div class="clients-inner">
         <div class="clients-item">
@@ -161,33 +183,35 @@
         <a href="#" class="button button_red button_contact">Напишите нам</a>
       </div>
     </div>
-    <div class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="#">
-            <img src="img/social-icons/vk-icon.svg" width="26" height="15" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="#">
-            <img src="img/social-icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="#">
-            <img src="img/social-icons/insta-icon.svg" width="21" height="21" alt="Инстаграм">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-content">
-      <p class="footer-content__title">Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+    <div class="footer-inner container">
+      <div class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#">
+              <img src="img/social-icons/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img src="img/social-icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img src="img/social-icons/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <p class="footer-content__title">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
   <!-- форма отправки -->
-  <section class="modal">
+  <!-- <section class="modal">
     <h2>Напишите нам</h2>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <p>
@@ -204,7 +228,7 @@
       <button class="modal-close" type="button">Закрыть</button>
       <button class="button button_red button_modal" type="submit">Отправить</button>
     </form>
-  </section>
+  </section> -->
 </body>
 
 </html>
