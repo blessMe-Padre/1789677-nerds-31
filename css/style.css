@@ -351,19 +351,19 @@ img {
 
 .slider-description {
   width: 100%;
-  background-image: url(/img/slider/main-slider-slide1.png);
+  background-image: url(../img/slider/main-slider-slide1.png);
   background-position: right;
   background-repeat: no-repeat;
 }
 
 .slider-description_2 {
-  background-image: url(/img/slider/main-slider-slide2.png);
+  background-image: url(../img/slider/main-slider-slide2.png);
   background-position: right;
   background-repeat: no-repeat;
 }
 
 .slider-description_3 {
-  background-image: url(/img/slider/main-slider-slide3.png);
+  background-image: url(../img/slider/main-slider-slide3.png);
   background-position: right;
   background-repeat: no-repeat;
 }
