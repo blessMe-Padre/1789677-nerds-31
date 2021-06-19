@@ -1,55 +1,103 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <title>HTML Academy: Нёрдс</title>
+  <title>HTML Academy: Главная</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <div>
-      <div>
-        <a href="index.html">
+<body class="page-body">
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="60" alt="Интернет магазин «Nёrds»">
         </a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <a href="blank.html">Корзина</a>
-      </div>
+        <ul class="site-navigation">
+          <li class="site-navigation__link"><a href="index.html">Студия</a></li>
+          <li class="site-navigation__link"><a href="blank.html">Клиенты</a></li>
+          <li class="site-navigation__link"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation__link"><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="cart-navigation">
+          <a class="cart-link" href="#">Корзина</a>
+        </div>
+      </nav>
     </div>
   </header>
   <main>
-    <p>Ошибка, такой страницы не существует =(</p>
-  </main>
-  <footer>
-    <div>
-      <h2>Контакты</h2>
-      <ul>
-        <li>
-          <a href="blank.html">Вконтакте</a>
-        </li>
-        <li>
-          <a href="blank.html">Фейсбук</a>
-        </li>
-        <li>
-          <a href="blank.html">Инстаграм</a>
-        </li>
-      </ul>
+    <div class="title-block">
+      <h1 class="page-title">Ошибка! Такой страницы не существует!</h1>
     </div>
-    <div>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-map">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A662a15a79c3343dbb788f999879e7747c046f7cec7eff8f05406e54b097b474f&amp;source=constructor"
+        width="100%" height="416" frameborder="0"></iframe>
+      <div class="contact-block">
+        <h2 class="visually-hidden">Карта</h2>
+        <p class="contact-block__title">nёrds design studio</p>
+        <p class="contact-block__text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <a class="contact-block__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <div>
+          <a href="#" class="button button_red button_contact">Напишите нам</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-inner container">
+      <div class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#">
+              <img src="img/social-icons/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img src="img/social-icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img src="img/social-icons/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <p class="footer-content__title">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
-  </div>
+
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-data__inner">
+        <div class="form-name">
+          <label for="appointment-name">Ваше имя:</label><br>
+          <input class="user-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="form-email">
+          <Label for="appointment-name">Ваш email:</Label><br>
+          <input class="user-email" id="appointment-email" type="email" name="email" placeholder="email@example.com">
+        </div>
+      </div>
+      <p>
+        <label for="appointment-text">Текст письма:</label><br>
+        <textarea class="user-message" id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button button_red button_modal" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 </body>
 
 </html>

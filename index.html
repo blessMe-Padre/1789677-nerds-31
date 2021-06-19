@@ -33,47 +33,37 @@
     <section class="slider">
       <h2 class="visually-hidden">Описание</h2>
       <div class="container">
-        <div class="slider-inner">
-          <div class="slides">
+        <div class="slides">
 
-            <div class="slider-navigation">
-              <label class="navigation-bar" for="r1"></label>
-              <label class="navigation-bar" for="r2"></label>
-              <label class="navigation-bar" for="r3"></label>
-            </div>
-
-            <input class="slider__input visually-hidden" type="radio" name="r" id="r1" checked>
-            <input class="slider__input visually-hidden" type="radio" name="r" id="r2">
-            <input class="slider__input visually-hidden" type="radio" name="r" id="r3">
-
-            <div class="slider-item slider-item_1">
-              <div class="slider-description">
-                <p class="slider-description__title">Долго, дорого, <br> скрупулезно.</p>
-                <p class="slider-description__text">Математически выверенный дизайн <br> для вашего сайта или мобильного
-                  приложения.</p>
-                <a class="button button_slider" href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="slider-description slider-description_2">
-                <p class="slider-description__title">Любим математику <br> как никто другой</p>
-                <p class="slider-description__text">Никакого креатива, только математические формулы <br> для расчета
-                  идеальных
-                  пропорций
-                </p>
-                <a class="button button_slider" href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="slider-description slider-description_3">
-                <p class="slider-description__title">Только ночь, <br> только хардкор</p>
-                <p class="slider-description__text">Работать днем, как все? Мы против этого. <br>
-                  Ближе к полуночи работа только начинается.</p>
-                <a class="button button_slider" href="#">Узнать больше</a>
-              </div>
-            </div>
-
+          <div class="slider-item slider-item_image1 slide slide-current">
+            <p class="slider-title">Долго, дорого, <br> скрупулезно.</p>
+            <p class="slider-text">Математически выверенный дизайн <br> для вашего сайта или мобильного
+              приложения.</p>
+            <a class="button button_slider" href="#">Узнать больше</a>
           </div>
+
+          <div class="slider-item slider-item_image2 slide">
+            <p class="slider-title">Любим математику <br> как никто другой</p>
+            <p class="slider-text">Никакого креатива, только математические формулы <br> для расчета
+              идеальных
+              пропорций
+            </p>
+            <a class="button button_slider" href="#">Узнать больше</a>
+          </div>
+
+          <div class="slider-item slider-item_image3 slide">
+            <p class="slider-title">Только ночь, <br> только хардкор</p>
+            <p class="slider-text">Работать днем, как все? Мы против этого. <br>
+              Ближе к полуночи работа только начинается.</p>
+            <a class="button button_slider" href="#">Узнать больше</a>
+          </div>
+
+          <div class="slider-controls">
+            <button class="button-slider button-current" type="button" aria-label="Первый слайд"></button>
+            <button class="button-slider" type="button" aria-label="Второй слайд"></button>
+            <button class="button-slider" type="button" aria-label="Третий слайд"></button>
+          </div>
+
         </div>
       </div>
     </section>
@@ -171,8 +161,6 @@
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A662a15a79c3343dbb788f999879e7747c046f7cec7eff8f05406e54b097b474f&amp;source=constructor"
         width="100%" height="416" frameborder="0"></iframe>
-
-      <!-- <img src="img/map-marker.png" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербур"> -->
       <div class="contact-block">
         <h2 class="visually-hidden">Карта</h2>
         <p class="contact-block__title">nёrds design studio</p>
@@ -210,25 +198,28 @@
       </div>
     </div>
   </footer>
-  <!-- форма отправки -->
-  <!-- <section class="modal">
-    <h2>Напишите нам</h2>
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="appointment-name">Ваше имя</label>
-        <input class="user-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
 
-        <Label>Ваш email</Label>
-        <input class="user-email" id="appointment-email" type="email" name="email" placeholder="email@example.com">
-      </p>
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-data__inner">
+        <div class="form-name">
+          <label for="appointment-name">Ваше имя:</label><br>
+          <input class="user-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="form-email">
+          <Label for="appointment-name">Ваш email:</Label><br>
+          <input class="user-email" id="appointment-email" type="email" name="email" placeholder="email@example.com">
+        </div>
+      </div>
       <p>
-        <label for="appointment-text">Текст письма</label>
+        <label for="appointment-text">Текст письма:</label><br>
         <textarea class="user-message" id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="modal-close" type="button">Закрыть</button>
       <button class="button button_red button_modal" type="submit">Отправить</button>
     </form>
-  </section> -->
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 </body>
 
 </html>

@@ -36,15 +36,33 @@
       <section class="filter-block">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter-field">
-            <legend>Стоимость</legend>
-            <input class="filter-range" type="range" min="0" max="15000" value="10000">
 
-            <label for="num1">от</label>
-            <input class="filter-num1" type="text" name="num1" id="num1">
-
-            <label for="num2">до</label>
-            <input class="filter-num2" type="text" name="num2" id="num2">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 30%;
+                    margin-left: 20%
+                  "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  left: 20%
+                "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  left: 50%
+                "></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="filter-field">
@@ -99,64 +117,82 @@
         <div class="catalog-header">
           <span class="catalog-title">сортировать:</span>
           <ul class="catalog-list breadcrumbs">
-            <a href="">
+
+            <a href="#">
               <li class="breadcrumbs-current">По цене</li>
             </a>
-            <a href="">
+            <a href="#">
               <li>По типу</li>
             </a>
-            <a href="">
+            <a href="#">
               <li>По названию</li>
             </a>
+            <a href="#">
+              <img src="img/catalog/icon-down-dir.svg" alt="">
+            </a>
+            <a href="#">
+              <img class="catalog-up" src="img/catalog/icon-down-dir.svg" alt="">
+            </a>
           </ul>
+
         </div>
         <ul class="catalog-items">
           <li class="catalog-item">
-            <img src="img/catalog/catalog-sedona.jpg" width="358" height="578" alt="Шаблон сайта для туристов">
+            <img class="catalog-item__header" src="img/catalog/browser.png" alt="">
+            <img class="catalog-items__img" src="img/catalog/catalog-sedona.jpg" width="358" height="578"
+              alt="Шаблон сайта для туристов">
             <div class="item-description">
-              <p>Sedona</p>
+              <p class="item-description__title">Sedona</p>
               <p>Информационный сайт для туристов</p>
               <a class="button button-catalog button_red" href="#">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog/catalog-pink.jpg" width="358" height="578" alt="Шаблон сайта приложения">
+            <img class="catalog-item__header" src="img/catalog/browser.png" alt="">
+            <img class="catalog-items__img" src="img/catalog/catalog-pink.jpg" width="358" height="578"
+              alt="Шаблон сайта приложения">
             <div class="item-description">
-              <p>Pink App</p>
+              <p class="item-description__title">Pink App</p>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a class="button button-catalog button_red" href="#">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog/catalog-barbershop.jpg" width="358" height="578" alt="Шаблон сайта салона красоты">
+            <img class="catalog-item__header" src="img/catalog/browser.png" alt="">
+            <img class="catalog-items__img" src="img/catalog/catalog-barbershop.jpg" width="358" height="578"
+              alt="Шаблон сайта салона красоты">
             <div class="item-description">
-              <p>Barbershop</p>
+              <p class="item-description__title">Barbershop</p>
               <p>Сайт салона красоты. Для мужчин, да.</p>
               <a class="button button-catalog button_red" href="#">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog/catalog-mishka.jpg" width="358" height="578"
+            <img class="catalog-item__header" src="img/catalog/browser.png" alt="">
+            <img class="catalog-items__img" src="img/catalog/catalog-mishka.jpg" width="358" height="578"
               alt="Шаблон интернет магазина вязаных игрушек">
             <div class="item-description">
-              <p>mishka</p>
+              <p class="item-description__title">mishka</p>
               <p>Интернет-магазин вязаных игрушек</p>
               <a class="button button-catalog button_red" href="#">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog/catalog-aplus.jpg" width="358" height="578" alt="Шаблон лендинга курсов">
+            <img class="catalog-item__header" src="img/catalog/browser.png" alt="">
+            <img class="catalog-items__img" src="img/catalog/catalog-aplus.jpg" width="358" height="578"
+              alt="Шаблон лендинга курсов">
             <div class="item-description">
-              <p>a plus</p>
+              <p class="item-description__title">a plus</p>
               <p>Лендинг курсов повышения квалификации</p>
               <a class="button button-catalog button_red" href="#">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog/catalog-kvast.jpg" width="358" height="578"
+            <img class="catalog-item__header" src="img/catalog/browser.png" alt="">
+            <img class="catalog-items__img" src="img/catalog/catalog-kvast.jpg" width="358" height="578"
               alt="Шаблон сайтa производителя крафтового кваса">
             <div class="item-description">
-              <p>кваст</p>
+              <p class="item-description__title">кваст</p>
               <p>Промо-сайт производителя крафтового кваса</p>
               <a class="button button-catalog button_red" href="#">9 900 ₽</a>
             </div>
@@ -223,25 +259,7 @@
       </div>
     </div>
   </footer>
-  <!-- форма отправки -->
-  <!-- <section class="modal">
-    <h2>Напишите нам</h2>
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="appointment-name">Ваше имя</label>
-        <input class="user-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
 
-        <Label>Ваш email</Label>
-        <input class="user-email" id="appointment-email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="appointment-text">Текст письма</label>
-        <textarea class="user-message" id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="modal-close" type="button">Закрыть</button>
-      <button class="button button_red button_modal" type="submit">Отправить</button>
-    </form>
-  </section> -->
 </body>
 
 </html>
