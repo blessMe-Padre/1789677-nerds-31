@@ -7,13 +7,15 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 
 <body class="page-body">
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="#">
           <img src="img/nerds-logo.svg" width="160" height="60" alt="Интернет магазин «Nёrds»">
         </a>
         <ul class="site-navigation">
@@ -35,14 +37,14 @@
       <div class="container">
         <div class="slides">
 
-          <div class="slider-item slider-item_image1 slide slide-current">
+          <div class="slider-item slider-item_order1 slide slide-current">
             <p class="slider-title">Долго, дорого, <br> скрупулезно.</p>
             <p class="slider-text">Математически выверенный дизайн <br> для вашего сайта или мобильного
               приложения.</p>
             <a class="button button_slider" href="#">Узнать больше</a>
           </div>
 
-          <div class="slider-item slider-item_image2 slide">
+          <div class="slider-item slider-item_order2 slide">
             <p class="slider-title">Любим математику <br> как никто другой</p>
             <p class="slider-text">Никакого креатива, только математические формулы <br> для расчета
               идеальных
@@ -51,7 +53,7 @@
             <a class="button button_slider" href="#">Узнать больше</a>
           </div>
 
-          <div class="slider-item slider-item_image3 slide">
+          <div class="slider-item slider-item_order3 slide">
             <p class="slider-title">Только ночь, <br> только хардкор</p>
             <p class="slider-text">Работать днем, как все? Мы против этого. <br>
               Ближе к полуночи работа только начинается.</p>
@@ -70,7 +72,7 @@
 
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
-      <div class="container container_services">
+      <div class="container-services">
         <ul class="services-list">
           <li class="services-item">
             <div class="services-image">
@@ -135,38 +137,39 @@
         </ul>
       </div>
     </section>
-    <section class="clients container">
-      <h2 class="visually-hidden">Клиенты</h2>
-      <div class="clients-inner">
-        <div class="clients-item">
-          <a href="#"><img src="img/clients/clients-logo-academy.svg" width="199" height="58"
-              alt="логотип html академия"></a>
-        </div>
-        <div class="clients-item">
-          <a href="#"><img src="img/clients/clients-logo-borodinski.png" width="209" height="90"
-              alt="логотип бородински"></a>
-        </div>
-        <div class="clients-item">
-          <a href="#"><img src="img/clients/clients-logo-pink.png" width="185" height="52" alt="логотип пинк"></a>
-        </div>
-        <div class="clients-item">
-          <a href="#"><img src="img/clients/clients-logo-mishka.png" width="173" height="84" alt="логотип мишка"></a>
+    <section class="clients">
+      <div class="container">
+        <h2 class="visually-hidden">Клиенты</h2>
+        <div class="clients-inner">
+          <div class="clients-item">
+            <a href="#"><img src="img/clients/clients-logo-academy.svg" width="199" height="58"
+                alt="логотип html академия"></a>
+          </div>
+          <div class="clients-item">
+            <a href="#"><img src="img/clients/clients-logo-borodinski.png" width="209" height="90"
+                alt="логотип бородински"></a>
+          </div>
+          <div class="clients-item">
+            <a href="#"><img src="img/clients/clients-logo-pink.png" width="185" height="52" alt="логотип пинк"></a>
+          </div>
+          <div class="clients-item">
+            <a href="#"><img src="img/clients/clients-logo-mishka.png" width="173" height="84" alt="логотип мишка"></a>
+          </div>
         </div>
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="footer-map">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A662a15a79c3343dbb788f999879e7747c046f7cec7eff8f05406e54b097b474f&amp;source=constructor"></iframe>
-      <div class="contact-block">
-        <h2 class="visually-hidden">Карта</h2>
-        <p class="contact-block__title">nёrds design studio</p>
-        <p class="contact-block__text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="contact-block__phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <div>
-          <a href="#popup" class="button button_red button_contact popup-link">Напишите нам</a>
+      <div id="map" style="width: 100%; height: 416px"></div>
+      <div class="container">
+        <div class="contact-block">
+          <h2 class="visually-hidden">Карта</h2>
+          <p class="contact-block__title">nёrds design studio</p>
+          <p class="contact-block__text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+          <a class="contact-block__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+
+          <button href="#popup" class="button button_red button_contact popup-link">Напишите нам</button>
         </div>
       </div>
     </div>
@@ -176,16 +179,19 @@
         <ul class="social-list">
           <li class="social-item">
             <a href="#">
+              <span class="visually-hidden">Вконтакте</span>
               <img src="img/social-icons/vk-icon.svg" width="26" height="15" alt="Вконтакте">
             </a>
           </li>
           <li class="social-item">
             <a href="#">
+              <span class="visually-hidden">Фейсбук</span>
               <img src="img/social-icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
             </a>
           </li>
           <li class="social-item">
             <a href="#">
+              <span class="visually-hidden">Инстаграм</span>
               <img src="img/social-icons/insta-icon.svg" width="21" height="21" alt="Инстаграм">
             </a>
           </li>
@@ -197,7 +203,6 @@
       </div>
     </div>
   </footer>
-
   <section id="popup" class="popup">
     <div class="popup__body">
       <div class="popup__content modal">
