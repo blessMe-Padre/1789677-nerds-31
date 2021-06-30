@@ -7,8 +7,6 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
 </head>
 
 <body class="page-body">
@@ -38,7 +36,6 @@
       <section class="filter-block">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -63,7 +60,6 @@
               </div>
             </div>
           </fieldset>
-
           <fieldset class="filter-field">
             <legend>Сетка:</legend>
             <ul class="filter-list">
@@ -81,7 +77,6 @@
               </li>
               <ul>
           </fieldset>
-
           <fieldset class="filter-field">
             <legend>Особенности:</legend>
             <ul class="filter-list">
@@ -107,7 +102,6 @@
               </li>
               <ul>
           </fieldset>
-
           <button class="button-form" type="submit">Показать</button>
         </form>
       </section>
@@ -116,7 +110,6 @@
         <div class="catalog-header">
           <span class="catalog-title">сортировать:</span>
           <ul class="catalog-list breadcrumbs">
-
             <a href="#">
               <li class="breadcrumbs-current">По цене</li>
             </a>
@@ -133,7 +126,6 @@
               <img class="catalog-up" src="img/catalog/icon-down-dir.svg" alt="">
             </a>
           </ul>
-
         </div>
         <ul class="catalog-items">
           <li class="catalog-item">
@@ -216,7 +208,9 @@
   </main>
   <footer class="footer">
     <div class="footer-map">
-      <div id="map" style="width: 100%; height: 416px"></div>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A662a15a79c3343dbb788f999879e7747c046f7cec7eff8f05406e54b097b474f&amp;source=constructor"
+        width="100%" height="416" frameborder="0"></iframe>
       <div class="contact-block">
         <h2 class="visually-hidden">Карта</h2>
         <p class="contact-block__title">nёrds design studio</p>
@@ -224,7 +218,6 @@
         <a class="contact-block__phone" href="tel:+78005558628">+7 800 555-86-28</a>
 
         <button href="#popup" class="button button_red button_contact popup-link">Напишите нам</button>
-
       </div>
     </div>
     <div class="footer-inner container">
@@ -283,7 +276,7 @@
       </div>
     </div>
   </section>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

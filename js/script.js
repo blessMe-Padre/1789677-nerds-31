@@ -63,24 +63,3 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-ymaps.ready(function () {
-  var myMap = new ymaps.Map('map', {
-    center: [59.968322, 30.317359],
-    zoom: 15
-  }, {
-    searchControlProvider: 'yandex#search'
-  }),
-    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: 'nёrds design studio',
-      balloonContent: 'наб. Реки Карповки, 5 лит П, Санкт-Петербург'
-    }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-marker.png',
-      iconImageSize: [231, 190],
-      iconImageOffset: [-50, -190]
-    });
-  myMap.behaviors.disable('scrollZoom');
-  myMap.geoObjects
-    .add(myPlacemark);
-});
-
