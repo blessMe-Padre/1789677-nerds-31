@@ -59,7 +59,7 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 60%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -70,7 +70,7 @@ sub {
 }
 
 sup {
-  top: -7px;
+  top: -14px;
 }
 
 img {

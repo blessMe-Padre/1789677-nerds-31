@@ -6,7 +6,7 @@
   <title>HTML Academy: Главная</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -69,14 +69,14 @@
     </section>
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
-      <div class="container-services">
+      <div class="container-services container">
         <ul class="services-list">
           <li class="services-item">
             <div class="services-image">
               <img src="img/services/services-web.jpg" width="300" height="146" alt="ноутбук">
             </div>
             <h3 class="services-title">Веб-сайты</h3>
-            <p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <p class="services-text">Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
             <a class="button button_small button_red" href="#">Заказать</a>
           </li>
           <li class="services-item">
@@ -84,7 +84,7 @@
               <img src="img/services/services-app.jpg" width="300" height="146" alt="2 смартфона">
             </div>
             <h3 class="services-title">Приложения</h3>
-            <p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <p class="services-text">Покорите топ-10 приложений<br> в AppStore и Google Play</p>
             <a class="button button_small button_green" href="#">Заказать</a>
           </li>
           <li class="services-item">
@@ -92,7 +92,7 @@
               <img src="img/services/services-pres.jpg" width="300" height="146" alt="мольберт">
             </div>
             <h3 class="services-title">Презентации</h3>
-            <p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <p class="services-text">Вы даже не подозреваете,<br> насколько вы изумительны!</p>
             <a class="button button_small button_yellow" href="#">Заказать</a>
           </li>
         </ul>
@@ -102,7 +102,7 @@
       <h2 class="visually-hidden">О нас</h2>
       <div class="about-descriptions">
         <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p class="about-title__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+        <p class="about-title__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше
           креатива.
           Работаем не покладая рук, как роботы.</p>
         <p class="about-subtitle">Выполняем заказы на разработку:</p>
@@ -116,7 +116,7 @@
         <div class="about-feature__image">
           <img src="img/about-nerds.png" width="360" height="208" alt="логотип «Nёrds»">
         </div>
-        <p class="about-subtitle">с 2004 года любим точность во всем:</p>
+        <p class="about-subtitle about-subtitle_left">с 2004 года любим точность во всем:</p>
         <ul class="about-list">
           <li class="about-item">
             <p class="about-item__num">146<sup>%</sup></p>
@@ -157,18 +157,18 @@
   </main>
   <footer class="footer">
     <div class="footer-map">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A662a15a79c3343dbb788f999879e7747c046f7cec7eff8f05406e54b097b474f&amp;source=constructor"
-        width="100%" height="416" frameborder="0"></iframe>
-      <div class="container">
+      <div class="contac-container">
         <div class="contact-block">
           <h2 class="visually-hidden">Карта</h2>
           <p class="contact-block__title">nёrds design studio</p>
           <p class="contact-block__text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
           <a class="contact-block__phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <button href="#popup" class="button button_red button_contact popup-link">Напишите нам</button>
+          <a class="button button_red button_contact popup-link" href="form.html">Напишите нам</a>
         </div>
       </div>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A662a15a79c3343dbb788f999879e7747c046f7cec7eff8f05406e54b097b474f&amp;source=constructor"
+        height="416"></iframe>
     </div>
     <div class="footer-inner container">
       <div class="footer-social">
@@ -211,7 +211,7 @@
               <input class="user-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
             </div>
             <div class="form-email">
-              <Label for="appointment-name">Ваш email:</Label><br>
+              <label for="appointment-email">Ваш email:</Label><br>
               <input class="user-email" id="appointment-email" type="email" name="email"
                 placeholder="email@example.com">
             </div>
